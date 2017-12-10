@@ -20,17 +20,39 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        rollTheDices()
         
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+
+    
+    func rollTheDices() {
+        
+        let randomNum1 = Int(arc4random_uniform(6))
+        let randomNum2 = Int(arc4random_uniform(6))
+        
+//        print(randomNum1)
+//        print(randomNum2)
+        
+//        print(diceArray[randomNum1])
+        
+        diceImage1.image = UIImage(named: diceArray[randomNum1])
+        diceImage2.image = UIImage(named: diceArray[randomNum2])
+        
+    }
+    
+    
+    
+    
+    
     @IBAction func buttonPressd(_ sender: Any) {
+        
+        rollTheDices()
+        
     }
     
     
