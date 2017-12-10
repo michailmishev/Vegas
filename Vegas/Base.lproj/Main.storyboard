@@ -18,22 +18,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice5" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-Us-LNE">
-                                <rect key="frame" x="49" y="262" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleAspectFit" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="aal-c9-Kam">
+                                <rect key="frame" x="67.5" y="283.5" width="240" height="100"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice5" translatesAutoresizingMaskIntoConstraints="NO" id="aVO-Us-LNE">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="Pba-2w-4zG"/>
+                                            <constraint firstAttribute="height" constant="100" id="ceT-G0-yP1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dice4" translatesAutoresizingMaskIntoConstraints="NO" id="U7R-JC-cIX">
+                                        <rect key="frame" x="140" y="0.0" width="100" height="100"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="STK-eB-hdR"/>
+                                            <constraint firstAttribute="width" constant="100" id="het-FH-OVf"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="vegasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Cs3-W2-mSW">
+                                <rect key="frame" x="67.5" y="40" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FhF-Zs-YWx"/>
+                                    <constraint firstAttribute="height" constant="128" id="XFK-dE-hiP"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dice4" translatesAutoresizingMaskIntoConstraints="NO" id="U7R-JC-cIX">
-                                <rect key="frame" x="238" y="262" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="vegasLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Cs3-W2-mSW">
-                                <rect key="frame" x="67" y="58" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-D4-eyx">
-                                <rect key="frame" x="99" y="497" width="167" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Nm-D4-eyx">
+                                <rect key="frame" x="104" y="537" width="167" height="60"/>
                                 <color key="backgroundColor" red="0.9807170033454895" green="0.83725416660308838" blue="0.06323503702878952" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="167" id="X2l-nl-AAo"/>
+                                    <constraint firstAttribute="height" constant="60" id="oAC-Lw-u9O"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
                                 <state key="normal" title="Roll!">
                                     <color key="titleColor" red="0.96388262510299683" green="0.0" blue="0.0010666496818885207" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,6 +66,14 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cs3-W2-mSW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02o-g8-Wan"/>
+                            <constraint firstItem="0Nm-D4-eyx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eq8-s1-Oft"/>
+                            <constraint firstAttribute="bottom" secondItem="0Nm-D4-eyx" secondAttribute="bottom" constant="70" id="L4l-cl-goF"/>
+                            <constraint firstItem="aal-c9-Kam" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Pd2-bA-BNg"/>
+                            <constraint firstItem="Cs3-W2-mSW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="c7g-Od-a4p"/>
+                            <constraint firstItem="aal-c9-Kam" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n8e-ac-itv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

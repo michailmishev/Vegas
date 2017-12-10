@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var diceImage2: UIImageView!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,10 +24,12 @@ class ViewController: UIViewController {
     }
 
     
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
 
+    
     
     func rollTheDices() {
         
@@ -46,11 +47,13 @@ class ViewController: UIViewController {
     }
     
     
+    
     override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
         
         rollTheDices()
         
     }
+    
     
     
     @IBAction func buttonPressd(_ sender: Any) {
@@ -59,6 +62,16 @@ class ViewController: UIViewController {
         
     }
     
+ 
     
 }
+
+
+
+
+
+
+
+
+
 
