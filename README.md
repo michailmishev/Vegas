@@ -1,6 +1,4 @@
-# Vegas
-
-### Viva Las Vegas 💃🏼
+# Viva Las Vegas 💃🏼
 
 <br />
 
